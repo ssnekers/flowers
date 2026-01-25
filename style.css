@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+section, header, footer {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero {
+  background: #f8eaea;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #d6336c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 250px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background: #eee;
+}
