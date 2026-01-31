@@ -7,63 +7,75 @@
 </head>
 <body>
 
-<!-- ☰ БУРГЕР КНОПКА -->
+<!-- ☰ БУРГЕР -->
 <div class="burger" onclick="toggleMenu()">☰</div>
 
-<!-- ВИЇЗНЕ МЕНЮ -->
+<!-- МЕНЮ -->
 <nav id="sideMenu">
-  <a href="#bouquets">Види букетів</a>
-  <a href="#wedding">Весільні</a>
-  <a href="#gifts">Подарункові</a>
-  <a href="#about">Про нас</a>
-  <a href="#payment">Оплата</a>
-  <a href="#requisites">Реквізити</a>
-  <a href="#contacts">Контакти</a>
+  <a href="#bouquets" onclick="toggleMenu()">Букети</a>
+  <a href="#wedding" onclick="toggleMenu()">Весільні</a>
+  <a href="#gifts" onclick="toggleMenu()">Подарункові</a>
+  <a href="#about" onclick="toggleMenu()">Про нас</a>
+  <a href="#payment" onclick="toggleMenu()">Оплата</a>
+  <a href="#contacts" onclick="toggleMenu()">Контакти</a>
 </nav>
 
-<!-- ГОЛОВНИЙ ЕКРАН -->
+<!-- ЗАТЕМНЕННЯ -->
+<div id="overlay" onclick="toggleMenu()"></div>
+
+<!-- HERO -->
 <section class="hero">
   <h1>Квіти з доставкою у вашому місті</h1>
   <p>Свіжі букети для будь-якої події</p>
   <a href="#contacts" class="btn">Замовити букет</a>
 </section>
 
-<!-- ФОТО ПІД HERO -->
-<section class="gallery">
-  <img src="img/bouquet1.jpg" alt="Букет 1">
-  <img src="img/bouquet2.jpg" alt="Букет 2">
-  <img src="img/bouquet3.jpg" alt="Букет 3">
-</section>
-
-<!-- СЕКЦІЇ -->
+<!-- БУКЕТИ -->
 <section id="bouquets" class="section">
-  <h2>Види букетів</h2>
-  <p>Авторські, сезонні, класичні букети.</p>
+  <h2>Наші букети</h2>
+
+  <div class="cards">
+    <div class="card">
+      <img src="img/bouquet1.jpg">
+      <h3>Ніжність</h3>
+      <p>Піони, троянди</p>
+      <span>від $35</span>
+    </div>
+
+    <div class="card">
+      <img src="img/bouquet2.jpg">
+      <h3>Класика</h3>
+      <p>Троянди</p>
+      <span>від $25</span>
+    </div>
+
+    <div class="card">
+      <img src="img/bouquet3.jpg">
+      <h3>Авторський</h3>
+      <p>Сезонні квіти</p>
+      <span>від $45</span>
+    </div>
+  </div>
 </section>
 
 <section id="wedding" class="section">
   <h2>Весільні букети</h2>
-  <p>Оформлення весіль та свят.</p>
+  <p>Оформлення весіль та свят під ключ</p>
 </section>
 
 <section id="gifts" class="section">
   <h2>Подарункові букети</h2>
-  <p>Для днів народження та особливих подій.</p>
+  <p>Для днів народження та особливих подій</p>
 </section>
 
 <section id="about" class="section">
   <h2>Про нас</h2>
-  <p>Працюємо з любовʼю до квітів 🌸</p>
+  <p>Ми створюємо букети з любовʼю та доставляємо їх вчасно 🌸</p>
 </section>
 
 <section id="payment" class="section">
   <h2>Оплата</h2>
-  <p>Готівка / переказ / онлайн.</p>
-</section>
-
-<section id="requisites" class="section">
-  <h2>Реквізити</h2>
-  <p>ФОП / IBAN / Банк</p>
+  <p>Готівка · Переказ · Онлайн</p>
 </section>
 
 <section id="contacts" class="section">
@@ -71,16 +83,19 @@
   <p>Instagram · Telegram · Телефон</p>
 </section>
 
-<!-- JS -->
 <script>
-  function toggleMenu() {
-    const menu = document.getElementById("sideMenu");
-    if (menu.style.left === "0px") {
-      menu.style.left = "-260px";
-    } else {
-      menu.style.left = "0px";
-    }
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  const overlay = document.getElementById("overlay");
+
+  if (menu.classList.contains("open")) {
+    menu.classList.remove("open");
+    overlay.style.display = "none";
+  } else {
+    menu.classList.add("open");
+    overlay.style.display = "block";
   }
+}
 </script>
 
 </body>
