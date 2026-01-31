@@ -7,115 +7,115 @@
 </head>
 <body>
 
-<!-- ☰ БУРГЕР -->
 <div class="burger" onclick="toggleMenu()">☰</div>
 
-<!-- МЕНЮ -->
 <nav id="sideMenu">
-  <a href="#bouquets" onclick="toggleMenu()">Букети</a>
+  <a href="#classic" onclick="toggleMenu()">Класичні</a>
+  <a href="#roses" onclick="toggleMenu()">Троянди</a>
+  <a href="#season" onclick="toggleMenu()">Сезонні</a>
   <a href="#wedding" onclick="toggleMenu()">Весільні</a>
   <a href="#gifts" onclick="toggleMenu()">Подарункові</a>
+  <a href="#premium" onclick="toggleMenu()">Преміум</a>
   <a href="#about" onclick="toggleMenu()">Про нас</a>
-  <a href="#payment" onclick="toggleMenu()">Оплата</a>
   <a href="#contacts" onclick="toggleMenu()">Контакти</a>
 </nav>
 
-<!-- OVERLAY -->
 <div id="overlay" onclick="toggleMenu()"></div>
 
-<!-- HERO -->
 <section class="hero">
   <h1>Квіти з доставкою у вашому місті</h1>
-  <p>Доставка по місту • Можлива сьогодні</p>
-  <a href="https://instagram.com/your_account" class="btn" target="_blank">
-    Замовити в Instagram
-  </a>
+  <p>Щоденна доставка • Свіжі квіти</p>
+  <a class="btn" href="#">Замовити букет</a>
 </section>
 
-<!-- БУКЕТИ -->
-<section id="bouquets" class="section">
-  <h2>Наші букети</h2>
-
+<!-- КЛАСИЧНІ -->
+<section id="classic" class="section">
+  <h2>Класичні букети</h2>
   <div class="cards">
-    <div class="card">
-      <img src="img/bouquet1.jpg" alt="Піоновий букет">
-      <h3>Піоновий букет</h3>
-      <p>Свіжі піони, оформлення під подарунок</p>
-      <span>від $35</span>
-    </div>
-
-    <div class="card">
-      <img src="img/bouquet2.jpg" alt="Троянди">
-      <h3>Троянди 51 шт</h3>
-      <p>Класичний варіант для важливих подій</p>
-      <span>від $55</span>
-    </div>
-
-    <div class="card">
-      <img src="img/bouquet3.jpg" alt="Сезонний букет">
-      <h3>Сезонний букет</h3>
-      <p>Збірний букет з наявних квітів</p>
-      <span>від $25</span>
-    </div>
+    <div class="card"><img src="img/b1.jpg"><h3>Ніжність</h3><p>Тюльпани</p><span>від $20</span></div>
+    <div class="card"><img src="img/b2.jpg"><h3>Ранок</h3><p>Альстромерія</p><span>від $22</span></div>
+    <div class="card"><img src="img/b3.jpg"><h3>Весна</h3><p>Мікс квітів</p><span>від $25</span></div>
+    <div class="card"><img src="img/b4.jpg"><h3>Легкість</h3><p>Гвоздики</p><span>від $18</span></div>
+    <div class="card"><img src="img/b5.jpg"><h3>Сонце</h3><p>Хризантеми</p><span>від $23</span></div>
   </div>
 </section>
 
-<!-- ЯК ЗАМОВИТИ -->
-<section class="section how">
-  <h2>Як замовити букет</h2>
-
-  <div class="steps">
-    <div class="step">1️⃣ Оберіть букет на сайті</div>
-    <div class="step">2️⃣ Напишіть нам в Instagram або Telegram</div>
-    <div class="step">3️⃣ Підтвердьте деталі та оплату</div>
-    <div class="step">4️⃣ Ми доставимо букет у зручний час</div>
+<!-- ТРОЯНДИ -->
+<section id="roses" class="section">
+  <h2>Букети з троянд</h2>
+  <div class="cards">
+    <div class="card"><img src="img/r1.jpg"><h3>25 троянд</h3><p>Червоні</p><span>від $30</span></div>
+    <div class="card"><img src="img/r2.jpg"><h3>35 троянд</h3><p>Рожеві</p><span>від $40</span></div>
+    <div class="card"><img src="img/r3.jpg"><h3>51 троянда</h3><p>Класика</p><span>від $55</span></div>
+    <div class="card"><img src="img/r4.jpg"><h3>101 троянда</h3><p>WOW-ефект</p><span>від $120</span></div>
+    <div class="card"><img src="img/r5.jpg"><h3>Білий шик</h3><p>Білі троянди</p><span>від $45</span></div>
   </div>
 </section>
 
+<!-- СЕЗОННІ -->
+<section id="season" class="section">
+  <h2>Сезонні букети</h2>
+  <div class="cards">
+    <div class="card"><img src="img/s1.jpg"><h3>Весняний</h3><p>Тюльпани</p><span>від $19</span></div>
+    <div class="card"><img src="img/s2.jpg"><h3>Літній</h3><p>Польові квіти</p><span>від $24</span></div>
+    <div class="card"><img src="img/s3.jpg"><h3>Осінній</h3><p>Теплі кольори</p><span>від $26</span></div>
+    <div class="card"><img src="img/s4.jpg"><h3>Зимовий</h3><p>Хвоя + квіти</p><span>від $28</span></div>
+    <div class="card"><img src="img/s5.jpg"><h3>Авторський</h3><p>Вибір флориста</p><span>від $30</span></div>
+  </div>
+</section>
+
+<!-- ВЕСІЛЬНІ -->
 <section id="wedding" class="section">
   <h2>Весільні букети</h2>
-  <p>Оформлення весіль та свят під ключ</p>
+  <div class="cards">
+    <div class="card"><img src="img/w1.jpg"><h3>Наречена</h3><span>від $40</span></div>
+    <div class="card"><img src="img/w2.jpg"><h3>Бохо</h3><span>від $45</span></div>
+    <div class="card"><img src="img/w3.jpg"><h3>Класика</h3><span>від $50</span></div>
+    <div class="card"><img src="img/w4.jpg"><h3>Пастель</h3><span>від $48</span></div>
+    <div class="card"><img src="img/w5.jpg"><h3>Luxury</h3><span>від $70</span></div>
+  </div>
 </section>
 
+<!-- ПОДАРУНКОВІ -->
 <section id="gifts" class="section">
   <h2>Подарункові букети</h2>
-  <p>Для днів народження та особливих подій</p>
+  <div class="cards">
+    <div class="card"><img src="img/g1.jpg"><h3>Мамі</h3><span>від $25</span></div>
+    <div class="card"><img src="img/g2.jpg"><h3>Коханій</h3><span>від $30</span></div>
+    <div class="card"><img src="img/g3.jpg"><h3>Подрузі</h3><span>від $22</span></div>
+    <div class="card"><img src="img/g4.jpg"><h3>Колезі</h3><span>від $20</span></div>
+    <div class="card"><img src="img/g5.jpg"><h3>День народження</h3><span>від $35</span></div>
+  </div>
+</section>
+
+<!-- ПРЕМІУМ -->
+<section id="premium" class="section">
+  <h2>Преміум букети</h2>
+  <div class="cards">
+    <div class="card"><img src="img/p1.jpg"><h3>XL букет</h3><span>від $80</span></div>
+    <div class="card"><img src="img/p2.jpg"><h3>Luxury box</h3><span>від $90</span></div>
+    <div class="card"><img src="img/p3.jpg"><h3>Авторський VIP</h3><span>від $110</span></div>
+    <div class="card"><img src="img/p4.jpg"><h3>Exclusive</h3><span>від $130</span></div>
+    <div class="card"><img src="img/p5.jpg"><h3>Royal</h3><span>від $150</span></div>
+  </div>
 </section>
 
 <section id="about" class="section">
   <h2>Про нас</h2>
-  <p>
-    Ми — квітковий магазин з офлайн-точкою та щоденною доставкою.
-    Працюємо тільки зі свіжими квітами та збираємо букети під замовлення 🌸
-  </p>
-</section>
-
-<section id="payment" class="section">
-  <h2>Оплата</h2>
-  <p>Готівка · Переказ · Онлайн</p>
+  <p>Офлайн магазин + доставка. Працюємо щодня.</p>
 </section>
 
 <section id="contacts" class="section">
   <h2>Контакти</h2>
-  <p>
-    📍 Місто: ваше місто<br>
-    📸 Instagram: @your_account<br>
-    📞 Телефон: +380…
-  </p>
+  <p>Instagram • Телефон • Місто</p>
 </section>
 
 <script>
 function toggleMenu() {
   const menu = document.getElementById("sideMenu");
   const overlay = document.getElementById("overlay");
-
-  if (menu.classList.contains("open")) {
-    menu.classList.remove("open");
-    overlay.style.display = "none";
-  } else {
-    menu.classList.add("open");
-    overlay.style.display = "block";
-  }
+  menu.classList.toggle("open");
+  overlay.style.display = menu.classList.contains("open") ? "block" : "none";
 }
 </script>
 
